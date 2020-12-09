@@ -146,12 +146,11 @@ body{
     border: 3px solid black;
     border-color: darkblue transparent darkblue darkblue;
     border-radius: 50%;
-    animation: rotate 0.8s ease-in infinite;
     animation-name: rotate;
     animation-duration: 0.8s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-    
+
     -webkit-animation-name: rotate;
     -webkit-animation-duration: 0.8s;
     -webkit-animation-timing-function: ease-in;
