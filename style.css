@@ -147,23 +147,32 @@ body{
     border-color: darkblue transparent darkblue darkblue;
     border-radius: 50%;
     animation: rotate 0.8s ease-in infinite;
-    -webkit-animation: rotate 0.8s ease-in infinite;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
+   
 }
 
 @keyframes rotate{
-    from{
+    0%{
         transform: translate(-50%, -50%);
     }
-    to{
+    100%{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
 @-webkit-keyframes rotate{
-    from{
+     0%{
         transform: translate(-50%, -50%);
     }
-    to{
+    100%{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
