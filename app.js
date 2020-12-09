@@ -48,7 +48,6 @@ function getSubCategoriesId(){
          subChilds[i].addEventListener("click", function(e){
              subCategoriesId = this.id;
              getData(urlForContent + this.id + "", giveCategories);
-             
              modal.classList.add("show");
              jokePara.innerHTML = "";
              spinner.style.display = "block";
